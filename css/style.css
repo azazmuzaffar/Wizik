@@ -27,6 +27,7 @@ body {
   height: fit-content;
   width: 100%;
   margin: 57px 0px;
+  padding: 0;
 }
 .navbar .container {
   position: relative;
@@ -204,15 +205,52 @@ footer .footer-content .on-mob {
   float: right;
 }
 
-@media only screen and (max-width: 768px) {
+@media screen and (max-width: 1024px) {
   /*>>>>>>>> Body <<<<<<<<<*/
+  .navber .container {
+    background: red;
+  }
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .nav li {
+    right: 15px;
+  }
+  .banner .--text-- h1 {
+    font-size: 27px;
+  }
+}
 
+@media screen and (max-width: 768px) {
+  /*>>>>>>>> Body <<<<<<<<<*/
+  .navber .container {
+    background: red;
+  }
+  .container {
+    margin: 0;
+    max-width: 100%;
+    padding-right: 15px;
+    padding-left: 15px;
+  }
+  .nav li {
+    right: 15px;
+  }
+  .banner {
+    width: 100%;
+  }
   .banner .--vector-- {
     top: 60%;
-    width: 80%;
+    left: 8%;
+  }
+  .banner .--vector-- img {
+    width: 100%;
   }
   .banner .--profile-- {
-    width: 48%;
+    width: 45%;
+    left: 20%;
   }
   .banner .--text-- {
     position: absolute;
@@ -221,9 +259,15 @@ footer .footer-content .on-mob {
     left: 50%;
     transform: translateX(-50%);
   }
+  .banner .--text-- h1 {
+    font-size: 30px;
+    color: #21396c;
+    font-weight: bold;
+    text-align: center;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media screen and (max-width: 600px) {
   /*>>>>>>>> Common <<<<<<<<<*/
 
   .desktop {
@@ -251,14 +295,19 @@ footer .footer-content .on-mob {
   /*>>>>>>>> Body <<<<<<<<<*/
 
   .banner {
-    height: 468px;
+    height: 478px;
   }
   .banner .--vector-- {
+    left: 10%;
     top: 55%;
     width: 80%;
   }
+  .banner .--vector-- img {
+    width: 43%;
+  }
   .banner .--profile-- {
-    width: 65%;
+    left: 20%;
+    width: 64%;
   }
   .banner .--text-- {
     position: absolute;
@@ -305,8 +354,42 @@ footer .footer-content .on-mob {
   }
 }
 
-@media only screen and (max-width: 500px) {
+@media screen and (max-width: 542px) {
   .banner .--profile-- {
-    width: 75%;
+    left: 19%;
+    width: 66%;
+  }
+}
+
+@media screen and (max-width: 520px) {
+  /*>>>>>>>> Body <<<<<<<<<*/
+
+  .banner .--profile-- {
+    width: 73%;
+    left: 17%;
+  }
+}
+@media screen and (max-width: 475px) {
+  /*>>>>>>>> Body <<<<<<<<<*/
+
+  .banner .--profile-- {
+    width: 76%;
+    left: 14%;
+  }
+}
+@media screen and (max-width: 420px) {
+  /*>>>>>>>> Body <<<<<<<<<*/
+  .banner {
+    height: 438px;
+  }
+  .banner .--text-- h1 {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 390px) {
+  /*>>>>>>>> Body <<<<<<<<<*/
+  .banner {
+    height: 408px;
   }
 }
