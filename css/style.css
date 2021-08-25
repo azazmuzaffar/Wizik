@@ -254,11 +254,11 @@ footer .footer-content .on-mob {
     height: 468px;
   }
   .banner .--vector-- {
-    top: 60%;
+    top: 55%;
     width: 80%;
   }
   .banner .--profile-- {
-    width: 80%;
+    width: 65%;
   }
   .banner .--text-- {
     position: absolute;
@@ -286,7 +286,7 @@ footer .footer-content .on-mob {
     width: 18%;
   }
   .wrap--text--2 h1 {
-    font-size: 23px;
+    font-size: 22px;
     padding: 10px;
     padding-bottom: 20px;
     padding-top: 40px;
@@ -302,5 +302,11 @@ footer .footer-content .on-mob {
   }
   footer .footer-content .on-mob {
     display: block;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .banner .--profile-- {
+    width: 75%;
   }
 }
